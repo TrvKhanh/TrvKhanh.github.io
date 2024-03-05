@@ -1,0 +1,52 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Hi!&#39; I&#39;m Khanh</title>
+        <link>https://trvkhanh.github.io/posts/</link>
+        <description>Recent content in Posts on Hi!&#39; I&#39;m Khanh</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://github.com/TrvKhanh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Khanh&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 06 Mar 2024 00:20:23 +0700</lastBuildDate>
+        <atom:link href="https://trvkhanh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>LearningRegression</title>
+            <link>https://trvkhanh.github.io/posts/2024/03/learningregression/</link>
+            <pubDate>Wed, 06 Mar 2024 00:20:23 +0700</pubDate>
+            
+            <guid>https://trvkhanh.github.io/posts/2024/03/learningregression/</guid>
+            <description>1. Giới Thiệu Linear Regression ( hồi quy tuyến tính )là một thuật toán cơ bản nhất của Machine Learning.Đây là một thuật toán Supervised learning ( Học có giám sát ) đầu ra là một hàm số tuyến tính của đầu vào.
+2. Phân tích toán học 2.1 What is Linear Regression? Ví Dụ: Chúng ta cần tính giá tiền của 1 căn nhà rộng \(x_1 ~ \text{m}^2\), có \(x_2\) phòng ngủ cách trung tâm thành phố \(x_3~\text{km}\).</description>
+            <content type="html"><![CDATA[<!-- raw HTML omitted -->
+<h2 id="1-giới-thiệu">1. Giới Thiệu</h2>
+<p>Linear Regression ( hồi quy tuyến tính )là một thuật toán cơ bản nhất của Machine Learning.Đây là một thuật toán Supervised learning ( Học có giám sát )  đầu ra là một hàm số tuyến tính của đầu vào.</p>
+<h2 id="2-phân-tích-toán-học">2. Phân tích toán học</h2>
+<h3 id="21-what-is-linear-regression">2.1 What is Linear Regression?</h3>
+<p>Ví Dụ: Chúng ta cần tính giá tiền của 1 căn nhà rộng  \(x_1 ~ \text{m}^2\), có \(x_2\) phòng ngủ cách trung tâm
+thành phố \(x_3~\text{km}\). Giả sử  chúng ta đã có số liệu thông kê từ 1000 căn  nhà trong thành phố đó , liệu rằng
+khi chúng ta có một căn nhà mới với các thông số về diện tích, số phòng ngủ và khoảng cách tới trung tâm, chúng ta có thể dự đoán được giá của căn nhà đó không? Nếu có thì hàm dự đoán \(y = f(x)\) sẽ có dạng như thế nào?
+Ở đây \(X = [x_1, x_2,x_3]\) là 1 vector hàng chứa các đặc trưng (features) đầu vào (input), \(y\) là 1 số vô hướng (scalar) biểu diễn giá trị đầu ra (output) trong ví dụ này chính là giá nhà cần tính</p>
+<p>Chúng ta nhận ra rằng :</p>
+<p>i) diện tích nhà càng lớn thì giá nhà càng cao</p>
+<p>ii) số lượng phòng ngủ càng lớn thì giá nhà càng cao</p>
+<p>iii) càng xa trung tâm thì giá nhà càng giảm</p>
+<p>Hàm số dưới đây có thể mô tả mối quan hệ giứa giá nhà với 3 đại lượng đầu vào: $$y \approx  f(\mathbf{x}) = \hat{y} $$
+$$f(x) = w_1x_1 + w_2x_2 + w_3x_3 + w_0 ~~~~(1)$$
+Trong đó \(w_1, w_2, w_3\) là các trọng số (Weight), \(w_0\) là Bias.Mối quan hệ \(y \approx f(\mathbf{x})\)
+là một mối quan hệ tuyến tính (linear). Bài toán chúng ta đang làm là một bài toán thuộc loại regression. Bài toán đi tìm các trọng số tối ưu \(w_1, w_2, w_3\).
+chính vì vậy được gọi là bài toán Linear Regression. (Từ tuyến tính ở đây có thể được hiểu là thẳng, phẳng).</p>
+<p>Khi  \(X\) là vector 2 chiều thì hàm số \(\hat{y} = f(\mathbf{x})\) có đồ thị(graph) là đường thẳng,  với \(X\) là vector 3 chiều thì hàm số \(\hat{y} = f(\mathbf{x})\) có đồ thị (graph) là mặt phẳng, với chiều của \(X\) lớn hơn 3 thì đồ thị của nó là một <em><strong>siêu mặt phẳng</strong></em>.</p>
+<p>Chú ý: y là giá trị thực của kết quả (outcome) (dựa trên số liệu thống kê chúng ta có trong tập training data), trong khi \(\hat{y}\)
+là giá trị mà mô hình Linear Regression dự đoán được. Hay giá trị này hoàn toàn khác nhau và chúng ta mong muốn rằng sự khác nhau này rất nhỏ.</p>
+<h3 id="22-sai-số-dự-đoánprediction-erro">2.2 Sai số dự đoán(Prediction erro)</h3>
+<h3 id="23-hàm-mất-mát-lost-function">2.3 Hàm mất mát (Lost Function)</h3>
+<h3 id="24-nghiệm-cho-bài-toán-linear-regression">2.4 Nghiệm cho bài toán Linear Regression</h3>
+<h2 id="3-ví-dụ-trên-python">3. Ví dụ trên Python</h2>
+<p>$$x_i$$</p>
+<h2 id="4-thảo-luận">4. Thảo luận</h2>
+<h2 id="5-tài-liệu-tham-khảo">5. Tài liệu tham khảo</h2>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
