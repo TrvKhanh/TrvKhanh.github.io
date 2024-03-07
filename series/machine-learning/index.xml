@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 06 Mar 2024 00:20:23 +0700</lastBuildDate>
     <atom:link href="https://trvkhanh.github.io/series/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Learning Regression</title>
-      <link>https://trvkhanh.github.io/posts/2024/03/learning-regression/</link>
+      <title>Linear Regression</title>
+      <link>https://trvkhanh.github.io/posts/2024/03/linear-regression/</link>
       <pubDate>Wed, 06 Mar 2024 00:20:23 +0700</pubDate>
-      <guid>https://trvkhanh.github.io/posts/2024/03/learning-regression/</guid>
+      <guid>https://trvkhanh.github.io/posts/2024/03/linear-regression/</guid>
       <description>1. Giới Thiệu Linear Regression ( hồi quy tuyến tính )là một thuật toán cơ bản nhất của Machine Learning.Đây là một thuật toán Supervised learning ( Học có giám sát ) đầu ra là một hàm số tuyến tính của đầu vào.&#xA;2. Phân tích toán học 2.1 What is Linear Regression? Ví Dụ: Chúng ta cần tính giá tiền của 1 căn nhà rộng \(x_1 ~ \text{m}^2\), có \(x_2\) phòng ngủ cách trung tâm thành phố \(x_3~\text{km}\).</description>
     </item>
   </channel>
