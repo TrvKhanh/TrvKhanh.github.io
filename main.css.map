@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/vankh/blogkhanh_master",
+	"sourceRoot": "C:/Users/vankh/OneDrive/Máy tính/blogkhanh_master",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",

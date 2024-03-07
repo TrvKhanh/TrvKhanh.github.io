@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 06 Mar 2024 00:20:23 +0700</lastBuildDate>
     <atom:link href="https://trvkhanh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LearningRegression</title>
-      <link>https://trvkhanh.github.io/posts/2024/03/learningregression/</link>
+      <title>Learning Regression</title>
+      <link>https://trvkhanh.github.io/posts/2024/03/learning-regression/</link>
       <pubDate>Wed, 06 Mar 2024 00:20:23 +0700</pubDate>
-      <guid>https://trvkhanh.github.io/posts/2024/03/learningregression/</guid>
+      <guid>https://trvkhanh.github.io/posts/2024/03/learning-regression/</guid>
       <description>1. Giới Thiệu Linear Regression ( hồi quy tuyến tính )là một thuật toán cơ bản nhất của Machine Learning.Đây là một thuật toán Supervised learning ( Học có giám sát ) đầu ra là một hàm số tuyến tính của đầu vào.&#xA;2. Phân tích toán học 2.1 What is Linear Regression? Ví Dụ: Chúng ta cần tính giá tiền của 1 căn nhà rộng \(x_1 ~ \text{m}^2\), có \(x_2\) phòng ngủ cách trung tâm thành phố \(x_3~\text{km}\).</description>
     </item>
     <item>
@@ -21,7 +21,7 @@
       <link>https://trvkhanh.github.io/about/</link>
       <pubDate>Wed, 06 Mar 2024 00:18:33 +0700</pubDate>
       <guid>https://trvkhanh.github.io/about/</guid>
-      <description>Hi! I&amp;rsquo;m Khanh.Tuy đang ở độ tuổi đôi mươi nhưng mình lại có trí nhớ của người cao tuổi, thật đáng buồn:(. Đó là lý do để mình viết blog này. Một lý do nữa là khi viết, nó còn giúp mình nghĩ nhiều,nghĩ sâu hơn (I wirte to think). Ở đây, mình viết về Machine Learning và những thứ hay ho khác mà mình học được. Hy vọng mình đủ chăm để post thật nhiều hihi.</description>
+      <description>Hi! I&amp;rsquo;m Khanh.Tuy đang ở độ tuổi đôi mươi nhưng mình lại có trí nhớ của người cao tuổi. Đó là lý do để mình viết blog này. Một lý do nữa là khi viết, nó còn giúp mình hiểu rõ vấn đề hơn (I wirte to think), tăng khả năng diễn đạt. Ở đây, chủ yếu mình viết về Machine Learning mà mình học được hoặc là nhứng thứ hay ho khác.</description>
     </item>
   </channel>
 </rss>
