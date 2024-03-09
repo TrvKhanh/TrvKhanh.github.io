@@ -113,7 +113,7 @@
         
             <span class="logo__mark">&gt;</span>
             <span class="logo__text ">
-                $ cd /home/BlogKhanh</span>
+                $ BlogKhanh</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -218,7 +218,7 @@ là một mối quan hệ tuyến tính (linear). Bài toán chúng ta đang là
 chính vì vậy được gọi là bài toán Linear Regression. (Từ tuyến tính ở đây có thể được hiểu là thẳng, phẳng).</p>
 <p>Khi  \(X\) là vector 2 chiều thì hàm số \(\hat{y} = f(\mathbf{x})\) có đồ thị(graph) là <em><strong>đường thẳng</strong></em>,  với \(X\) là vector 3 chiều thì hàm số \(\hat{y} = f(\mathbf{x})\) có đồ thị (graph) là <em><strong>mặt phẳng</strong></em>, với chiều của \(X\) lớn hơn 3 thì đồ thị của nó là một <em><strong>siêu mặt phẳng</strong></em>.</p>
 <p>Chú ý: y là giá trị thực của kết quả (outcome) (dựa trên số liệu thống kê chúng ta có trong tập training data), trong khi \(\hat{y}\)
-là giá trị mà mô hình Linear Regression dự đoán được. Hay giá trị này hoàn toàn khác nhau và chúng ta mong muốn rằng sự khác nhau này rất nhỏ.</p>
+là giá trị mà mô hình Linear Regression dự đoán được. Hai giá trị này hoàn toàn khác nhau và chúng ta mong muốn rằng sự khác nhau này rất nhỏ.</p>
 <h2 id="2-phân-tích-toán-học">2 Phân tích toán học</h2>
 <p>Trong phương trình \((1)\) phía trên nếu chung ta đặt <em><strong>w</strong></em>\( = [w_1, w_2, w_3]^T\) là 1 <em><strong>vector cột</strong></em> chứa các trọng số cần tối ưu.
 \(\mathbf{\bar{x}} = [1, x_1, x_2, x_3]\) là 1 <em><strong>vector hàng</strong></em> dữ liệu đầu vào mở rộng. Số
@@ -228,7 +228,7 @@ là giá trị mà mô hình Linear Regression dự đoán được. Hay giá tr
 <p>Chúng ta mong muốn tìm ra hàm số \(\hat{y}\) sao cho sai số \(e\) có giá trị tuyệt đối là nhỏ nhất đồng nghĩa với giá trị sau đây càng nhỏ càng tốt: $$\frac{1}{2} e^2 = \frac{1}{2} (y - \hat{y} )^2 = \frac{1}{2} (y - \mathbf{\bar{x}}w)^2$$</p>
 <p>trong đó việc lấy \(\frac{1}{2}\) là để thuận tiện khi lấy đạo hàm. Chúng ta cần \((e^2)\) vì \( e = y - \hat{y}\) có thể âm .Ở đây chúng ta không lấy giá trị tuyệt đối vì hàm \(|e|\) không khả vi tại gốc tọa độ (không thuận tiện cho việc tối ưu).</p>
 <h3 id="22-hàm-mất-mát-lost-function">2.2 Hàm mất mát (Lost Function)</h3>
-<p>Diều tương tự xảy ra với tất cả các cặp dữ liêu (\(x_i, y_i, i = 1,2,&hellip;,N\)) với N là số lượng dữ liêu trong tập traing data .Việc tìm mô hình tốt nhất tương đương với việc tìm <em><strong>w</strong></em> để hàm số sau đạt giá trị nhỏ nhất:
+<p>Điều tương tự xảy ra với tất cả các cặp dữ liệu (\(x_i, y_i, i = 1,2,&hellip;,N\)) với N là số lượng dữ liệu trong tập traing data .Việc tìm mô hình tốt nhất tương đương với việc tìm <em><strong>w</strong></em> để hàm số sau đạt giá trị nhỏ nhất:
 $$\mathcal{L}(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y_i - \mathbf{\bar{x}}w)^2~~~(2)$$
 Hàm số \(\mathcal{L}\) được gọi là <em><strong>hàm mất mát</strong></em>(loss function) giá trị của <em><strong>w</strong></em> làm cho \(\mathcal{L}\) đạt giá trị nhỏ nhất được gọi là điểm tối ưu (optimal point) kí hiệu : $$\mathbf{w}^* = \arg\min_{\mathbf{w}} \mathcal{L}(\mathbf{w})$$</p>
 <p>Đặt \(\mathbf{y} =
@@ -265,11 +265,11 @@ $$
 với \(| \mathbf{x} |_2\) là Euclidean norm (chuẩn Euclid, hay khoảng cách Euclid), nói cách khác \(| \mathbf{x} |_2^2\) là tổng của bình phương mỗi phần tử của vector \(\mathbf{x}\) .</p>
 <p>Ví dụ \(\mathbf{x} = [x_1, x_2, \cdots,  x_n] \implies | \mathbf{x} |_2 = \sqrt{x_1^2 + x_2^2 + \dots x_n^2}\).</p>
 <h3 id="23-nghiệm-cho-bài-toán-linear-regression">2.3 Nghiệm cho bài toán Linear Regression</h3>
-<p>Hàm mất mát \(\mathcal{L}\) có gradient tại mọi \(\mathcal{w}\). Gia trị \(\mathcal{w}\) cần tối ưu chính là nghiệm của phương trình đạo hàm
+<p>Hàm mất mát \(\mathcal{L}\) có gradient tại mọi \(\mathcal{w}\). Giá trị \(\mathcal{w}\) cần tối ưu chính là nghiệm của phương trình đạo hàm
 \(\mathcal{L(w)}\) bằng không. $$\frac{\partial{\mathcal{L}(\mathbf{w})}}{\partial{\mathbf{w}}}
 = \mathbf{\bar{X}}^T (\mathbf{\bar{X}}\mathbf{w} - \mathbf{y}) = 0$$
 \(\implies \mathbf{\bar{X}}^T \mathbf{\bar{X}}\mathbf{w} = \mathbf{\bar{X}}^T \mathbf{y} \).
-Nếu ma trận \(\mathbf{A} \triangleq \mathbf{\bar{X}}^T \mathbf{\bar{X}}\) khả nghịch thì phương trình có nghiệm duy nhât \(\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{y})\mathbf{\bar{X}}^T \mathbf{\bar{X}}^{-1}\).Với ma trận \(\mathbf{A}\) không khả nghịch thì phương trình vô nghiệm hoặc có vô số nghiệm lúc này chúng ta sử dụng khái niệm <em><strong>giả nghịch đảo</strong></em> \(\mathbf{A}^{\dagger}\) (đọc là A dagger trong tiếng Anh). (Giả nghịch đảo (pseudo inverse) là trường hợp tổng quát của nghịch đảo khi ma trận không khả nghịch hoặc thậm chí không vuông) lúc này điểm tối ưu có dạng $$(\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{y})^{\dagger}\mathbf{\bar{X}}^T \mathbf{\bar{X}}^{-1}$$</p>
+Nếu ma trận \(\mathbf{A} \triangleq \mathbf{\bar{X}}^T \mathbf{\bar{X}}\) khả nghịch thì phương trình có nghiệm duy nhất \(\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{y})\mathbf{\bar{X}}^T \mathbf{\bar{X}}^{-1}\).Với ma trận \(\mathbf{A}\) không khả nghịch thì phương trình vô nghiệm hoặc có vô số nghiệm lúc này chúng ta sử dụng khái niệm <em><strong>giả nghịch đảo</strong></em> \(\mathbf{A}^{\dagger}\) (đọc là A dagger trong tiếng Anh). (Giả nghịch đảo (pseudo inverse) là trường hợp tổng quát của nghịch đảo khi ma trận không khả nghịch hoặc thậm chí không vuông) lúc này điểm tối ưu có dạng: $$\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{y})^{\dagger}\mathbf{\bar{X}}^T \mathbf{\bar{X}}^{-1}$$</p>
 <h2 id="3-coding-with-python">3. Coding with python</h2>
 <p>Với bộ dataset <a href="https://drive.google.com/file/d/1tZLu8-uwuX7lWhhQwE5oJhtA0LXkjk3x/view?usp=sharing">train.csv</a></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
