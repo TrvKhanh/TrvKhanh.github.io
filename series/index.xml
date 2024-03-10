@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on I&#39;m Khanh, Hello World !!</title>
-    <link>https://trvkhanh.github.io/series/</link>
+    <link>https://khanhblog.id.vn/series/</link>
     <description>Recent content in Series on I&#39;m Khanh, Hello World !!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://github.com/TrvKhanh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Khanh&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Mar 2024 00:20:23 +0700</lastBuildDate>
-    <atom:link href="https://trvkhanh.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://khanhblog.id.vn/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine Learning</title>
-      <link>https://trvkhanh.github.io/series/machine-learning/</link>
+      <link>https://khanhblog.id.vn/series/machine-learning/</link>
       <pubDate>Wed, 06 Mar 2024 00:20:23 +0700</pubDate>
-      <guid>https://trvkhanh.github.io/series/machine-learning/</guid>
+      <guid>https://khanhblog.id.vn/series/machine-learning/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ml on I&#39;m Khanh, Hello World !!</title>
-    <link>https://trvkhanh.github.io/tags/ml/</link>
+    <link>https://khanhblog.id.vn/tags/ml/</link>
     <description>Recent content in Ml on I&#39;m Khanh, Hello World !!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://github.com/TrvKhanh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Khanh&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Mar 2024 00:20:23 +0700</lastBuildDate>
-    <atom:link href="https://trvkhanh.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://khanhblog.id.vn/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Regression</title>
-      <link>https://trvkhanh.github.io/posts/2024/03/linear-regression/</link>
+      <link>https://khanhblog.id.vn/posts/2024/03/linear-regression/</link>
       <pubDate>Wed, 06 Mar 2024 00:20:23 +0700</pubDate>
-      <guid>https://trvkhanh.github.io/posts/2024/03/linear-regression/</guid>
+      <guid>https://khanhblog.id.vn/posts/2024/03/linear-regression/</guid>
       <description>Linear Regression ( hồi quy tuyến tính )là một thuật toán cơ bản nhất của Machine Learning.Đây là một thuật toán Supervised learning ( Học có giám sát ) đầu ra là một hàm số tuyến tính của đầu vào.&#xA;1. Giới Thiệu 1.1 What is Linear Regression? Ví Dụ: Chúng ta cần tính giá tiền của 1 căn nhà rộng \(x_1 ~ \text{m}^2\), có \(x_2\) phòng ngủ cách trung tâm thành phố \(x_3~\text{km}\).</description>
     </item>
   </channel>
