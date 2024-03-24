@@ -5,7 +5,7 @@
         <description>Recent content in Posts on I&#39;m Khanh, Hello World !!</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>&lt;a href=&#34;https://github.com/TrvKhanh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Khanh&lt;/a&gt;</copyright>
+        <copyright>&lt;a href=&#34;https://khanhblog.id.vn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Khanh&lt;/a&gt;</copyright>
         <lastBuildDate>Wed, 06 Mar 2024 00:20:23 +0700</lastBuildDate>
         <atom:link href="https://khanhblog.id.vn/posts/index.xml" rel="self" type="application/rss+xml" />
         
@@ -141,7 +141,7 @@ Nếu ma trận \(\mathbf{A} \triangleq \mathbf{\bar{X}}^T \mathbf{\bar{X}}\) kh
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">### Hiển thị đường dự đoán và so sánh với điểm dự đoán bất kì.</span>
 </span></span><span style="display:flex;"><span>        y_pred <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(<span style="color:#ae81ff">145</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">### Dự đoán với x = 145 liệu mô hình có hoạt đọng tốt?</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">### Dự đoán với x = 145 liệu mô hình có hoạt động tốt?</span>
 </span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>plot(x_0, y_0, <span style="color:#e6db74">&#39;r-&#39;</span>)
 </span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>scatter(x, y, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>)
 </span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>plot(<span style="color:#ae81ff">145</span>, y_pred, <span style="color:#e6db74">&#39;r-&#39;</span>)
@@ -151,7 +151,7 @@ Nếu ma trận \(\mathbf{A} \triangleq \mathbf{\bar{X}}^T \mathbf{\bar{X}}\) kh
 </span></span></code></pre></div><p><img alt="Liner Regression" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/431354653_294033376868190_7917173532853071499_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHnbgtQ8I0_8482SjLfnOhkkMzm1AswdyOQzObUCzB3I0lqyD8eNHeok7qLQx5qrZVOsnxDNReprm9F4W7g5F4w&_nc_ohc=9FZdOqkfvbAAX9F6ulQ&_nc_ht=scontent.fhan2-3.fna&cb_e2o_trans=q&oh=03_AdTTLoiTKjmZdB-DeA4VQrTDNExkrDTXIpqkIJsDjbtbyw&oe=661634F7"></p>
 <p>Từ đồ thị bên trên ta thấy rằng các điểm dữ liệu màu xanh nằm khá gần đường thẳng dự đoán màu đỏ. Vậy mô hình Linear Regression hoạt động tốt với tập dữ liệu training.</p>
 <h2 id="4-thảo-luận">4. Thảo luận</h2>
-<p>Trên thực tế, một vector đặc trưng có thể có kích thước rất lớn, dẫn đến ma trận \(\mathbf{X}\mathbf{X}^{T}\)Chúng ta có thể dùng Gradiant Descent để tìm trọng số tối ưu giúp tránh được việc tính ma trận nghịch đảo.
+<p>Trên thực tế, một vector đặc trưng có thể có kích thước rất lớn, dẫn đến tìm nghịch đảo ma trận \(\mathbf{X}\mathbf{X}^{T}\) rất tốn thời gian và bộ nhớ. Chúng ta có thể dùng Gradiant Descent để tìm trọng số tối ưu giúp tránh được việc tính ma trận nghịch đảo.
 Hoặc chúng ta có thể dùng <em><strong>hồi quy ridge</strong></em> và khái niệm <em><strong>ma trận xác định dương</strong></em></p>
 <p>Ngoài ra Linear Regression rất <em><strong>nhạy cảm với nhiễu</strong></em>(sensitive to noise).
 Vì vậy, trước khi thực hiện Linear Regression, các nhiễu (outlier) cần phải được loại bỏ. Bước này được gọi là tiền xử lý (pre-processing).</p>
